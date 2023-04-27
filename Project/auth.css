@@ -1,18 +1,21 @@
 /* Font Family Persian */
 @font-face {
     font-family: Sarbaz;
-    src: url(/Css/Fonts/Sarbaz.ttf);
+    src: url('/Css/Fonts/Sarbaz.ttf');
 }
 
 @font-face {
     font-family: Vazir;
-    src: url(/Css/Fonts/Vazir.ttf);
+    src: url('/Css/Fonts/Vazir.ttf');
 }
 
 @font-face {
     font-family: IranSens;
-    src: url(/Css/Fonts/IranSens.ttf);
+    src: url('/Css/Fonts/IranSens.ttf');
 }
+
+
+
 
 
 .Fvazir{
@@ -77,6 +80,8 @@ body{
     font-family: vazir !important;
 
 }
+
+
 .main{
 	width: 350px;
 	height: 500px;
@@ -86,6 +91,8 @@ body{
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
+
+
 .fo{
     width: 350px;
 	height: 500px;
@@ -93,6 +100,8 @@ body{
 	box-shadow: 5px 20px 50px #000;
     background-color: #eee !important;
 }
+
+
 .colorForget{
     color: #5145d2;
 }
@@ -194,6 +203,10 @@ button:hover{
     user-select: none;
 
 }
+
+
+
+
 #chk:checked ~ .login{
 	transform: translateY(-500px);
 }
@@ -202,4 +215,26 @@ button:hover{
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+}
+
+
+.alert{
+	position: fixed;
+	background-color: #fff;
+	color: #3e2fcb;
+	border-radius: 10px;
+	padding:15px;
+	margin: 30px 40px;
+	left: 0;
+	bottom: 0;
+	user-select: none;
+	border: 3px solid rgb(13, 114, 157);
+	animation: tilt-shaking 0.7s infinite;
+}
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
 }
